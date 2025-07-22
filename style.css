@@ -2,38 +2,57 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 50px;
-    display: flex;
+    display: block;
     gap: 50px;
 }
 
-.box {
-    margin: 50px auto;
-    width: 400px;
-    height: 400px;
-    background: rgb(2, 31, 253);
-    box-shadow: 0px 16px 20px 10px rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.box-wrapper {
+    width: 60%;
+    margin: 0 auto;
 }
 
-.box a {
+.square {
+    float: right;
+    /* margin: 0 auto; */
+    width: 500px;
+    height: 500px;
+    background: rgb(2, 31, 253);
+    box-shadow: 0px 16px 20px 10px rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    line-height: 400px;
+}
+
+.square a {
     color: aliceblue;
+    text-transform: uppercase;
+    font-weight: 500;
+
 }
 
 .circle a {
     color: aliceblue;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
 .circle {
-    margin: 50px auto;
-    width: 400px;
-    height: 400px;
+    float: left;
+    /* margin: 0px auto; */
+    width: 500px;
+    height: 500px;
     background: rgb(243, 4, 4);
     box-shadow: 0px 16px 20px 10px rgba(0, 0, 0, 0.5);
     border-radius: 50%;
-    display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    line-height: 400px;
+
+
+}
+
+.box-wrapper {
+    content: "";
+    display: block;
+    clear: both;
 }
